@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <% if (nav === true) { %>
+  
+    <div class="w-full px-10 py-4 bg-gray-800 text-white flex justify-between items-center shadow-md">
+      <div class="flex items-center gap-2">
+        <img src="data:image/png;base64,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" alt="Pinterest Logo" class="h-8 w-8">
+        <h3 class="text-2xl font-bold">
+          Pinterest
+        </h3>
+      </div>
+      <div class="flex gap-5 items-center">
+        <a href="/profile" class="px-4 py-2 bg-red-600 hover:bg-red-500 text-white rounded-md transition duration-300">Profile</a>
+        <a href="/feed" class="px-4 py-2 bg-red-600 hover:bg-red-500 text-white rounded-md transition duration-300">Feed</a>
+        <a href="/logout" class="px-4 py-2 bg-red-600 hover:bg-red-500 text-white rounded-md transition duration-300">Logout</a>
+      </div>
+    </div>
+    
+  
+  <% } %>
+    
